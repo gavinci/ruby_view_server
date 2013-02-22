@@ -1,0 +1,15 @@
+<html>
+  <% name = 'Gavin' %>
+  <h1>This is <%= name %>'s Page</h1>
+
+  
+  <h2>Here is a list of dogs</h2>
+  
+  <% dogs = ['belle', 'jolie'] %>
+  
+  <ul>
+    <% dogs.each do |dog| %>
+      <%= '<li>' + dog + '</li>' %>
+    <% end %>
+  </ul>
+</html>
