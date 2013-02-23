@@ -1,11 +1,14 @@
+<%
+  def link_to(name, url)
+    return "<a href='#{url}'>#{name}</a>"
+  end
+ %>
+
 <html>
   <body>
-    <h1>You're using a layout</h1>
+    <h1>This is the header</h1>
     <p>
-      <h3> I'm a header</h3>
-      <p>Put things in the header</p>
-      <a href='me.html'>Me</a>
-
+      <%= link_to("A link to the 'me' page", "me.html") %>
     </p>
     <hr />
     <div>
@@ -14,7 +17,9 @@
     <hr />
     <div>
       <h3> I'm a footer</h3>
-      <p>Put things in the footer</p>
+      <p>
+      <%= link_to("Another link to the 'me' page", "me.html") %>
+      </p>
     </div>
   </body>
 </html>
